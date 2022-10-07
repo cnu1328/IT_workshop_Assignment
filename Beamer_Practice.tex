@@ -1,0 +1,137 @@
+%creating a simple Tile page in Beamer
+\documentclass{beamer}
+
+
+%theme choice 
+\usetheme{CambridgeUS}
+
+
+%Title Page Details:
+\title{Beamer Practice}
+\subtitle{Practing For Exam}
+\author{srinudarpally}
+\institue{RGUKT BASAR}
+
+%Multiple Authors:
+
+\author{Babul \and
+       Sai Charan \and
+       Vishnu}
+
+
+%Two authors with different affiliations
+\author{Srinu \inst{Engineer} \and Vishnu \inst{Mechanical} \and Babul \inst{Programmer}}
+
+\date{\today}
+
+%LOGO
+\logo{\includegraphics[width = 0.5cm]{Logonew.png}}
+
+%logo only on title page
+
+
+%Modify footer text :
+
+%Define a counter
+\newcounter{currentenumi}
+
+\begin{document}
+
+%Title page frame
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+    \tableofcontents
+\end{frame}
+
+%Presentation Structure
+\section{Gravitation}
+\subsection{Method 1}
+\section{Existing Results}
+    \subsection{Method 1}
+    \subsection{Method2}
+    \subsection{Method 3}
+\section{Comparative Study}
+    \subsection{Method 2}
+\section*{References}
+    \subsection{method 3}
+
+%\begin{frame}
+    %to enforce entries inthe table of contents
+%\end{frame}
+
+%Abstarct Environment
+
+\begin{abstract}
+\begin{frame}{Ordered Lists in Beamer}
+\begin{itemmize}
+    \item srinu 1
+    \item Babul 2
+    \item Sai 3
+\end{itemmize}
+    
+\end{frame}
+\end{abstract}
+
+\begin{frame}{List in Multiple Frames}{Frame 1}
+\begin{enumerate}
+    \item item 1
+    \item item 2
+    \item item 3
+    \item item 4
+    \setcounter{currentenumi}{\theenumi}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Lists in Multiple Frames}{Frame2}
+
+\begin{enumerate}
+%use previous stored item number
+\setcounter{enumi}{\thecurrentenumi}
+    \item item 4
+    \item item 5
+\end{enumerate}  
+\end{frame}
+
+%columns
+\begin{frame}{Text and Image in Beamer}
+
+            \begin{figure}
+                \centering
+                \includegraphics[width = 2cm]{Logonew.png}
+                \caption{Rajiv Gandhi University Of Knowledge Techonologies}
+                \label{fig:my_label}
+            \end{figure}
+
+    
+\end{frame}
+
+\begin{frame}{Block Environment}{Madrid Theme}
+    \begin{block}{Standard Block}
+        This is a standard Block.
+    \end{block}
+    \begin{alertblock}{Alert Message}
+        This block Presents Alert Message
+    \end{alertblock}
+    \begin{exampleblock}{An Example of typesettig tool}
+        Example : MS Word, \LaTeX{}
+        
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{My First Table}
+\begin{table}[h]
+\begin{tabular}{l|l|l}
+        Cnetered & Left-aligned & Right-aligned \\
+\hline
+        A & c & E \\
+\hline
+        B & D & E \\
+
+\end{tabular}
+\end{table}
+\end{frame}
+\end{document}

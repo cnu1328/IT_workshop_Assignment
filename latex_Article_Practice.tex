@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[talbe,xcdraw]{xcolor}
+\usepackage{graphicx}
+
+\title{Latex Learning}
+\author{srinudarpally }
+\date{21-08-22}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction to Latex}
+Briefly put, LaTeX is a text editing and typesetting platform designed espe-
+cially for the use in Mathematics, Engineering, Science and Industry. How-
+ever, it should be noted that LaTeX is not only restricted to these fields.
+1
+
+\subsection{How to Install Latex}
+\subsubsection{in windows}
+\paragraph{first install MikTex} 
+\paragraph{then install any editor like text studio, tex maker, textlive....}
+
+\subsubsection{in Linux}
+\paragraph{in ubuntu sudo apt=get install kile}
+
+\section{What is the purpose \LaTeX?}
+LaTeX is a tool that can be used to produce professional quality
+documents that employ symbolic representation, charts and notation for
+quantitative and mathematical ideas and concepts. It can also be used to
+compose high quality presentations in power points, publish journal papers
+and books.
+
+\section{What are its benefits?}
+For the working mathematician, engineer or scientist, LaTeX has a library
+of commands which relay standard symbolic and notational conventions
+which allow for ease in representing and conveying mathematical
+constructs in a clear and easy manner.
+
+\section{TExt fontss Repressentations}
+
+\begin{tiny}
+Welcome to RGUKT
+\end{tiny} \\
+
+\begin{small}
+Welcome to RGUKT
+\end{small} \\
+\begin{large} 
+Welcome to RGUKT
+\end{large} \\
+\begin{Large}
+Welcome to RGUKT
+\end{Large} \\
+\begin{Huge}
+Welcome to RGUKT
+\end{Huge} 
+\\
+\textit{Welcome to RGUKT}
+\\
+\textbf{Welcome to RGUKT}
+
+\\
+\textsc{Welcome to RGUKT}
+\\
+\texttt{Welcome to RGUKT}
+
+
+\\
+\underline{Welcome to RGUKT}
+
+\\
+{\color{red}{Welcome to RGUKT}}
+\\
+
+\pagebreak
+
+\huge{Welcome to RGUKT} \\
+\Large{Welcome to RGUKT}
+
+\section{Table Representation}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+        S.No  & Subject1 & Subject2
+         \\
+         \hline
+         1 & Maths & IT \\
+         \hline
+         2 & chemistry & Physics \\
+         \hline
+         
+    \end{tabular}
+    \caption{This is my first table}
+    \label{tab:my_label}
+\end{table}
+
+\begin{table}[h]
+    \begin{tabular}{|l|l|l|l|l|}
+    \hlinet
+    S.No.  & s1 & s2 & s3 & Total \\
+    \hline
+    1 & 90 & 66 & 0 &xx \\
+    \hline
+    2 & 0 & 66 & 55 &xx \\
+    \hline
+     3 & 00 & 55 & 5 &xx\\
+    \hline
+       4  & 00 & 55 & 55 &xx\\
+    \hline
+    
+    \end{tabular}
+
+\end{table}
+
+\section{Maths Equations}
+$(a+b)^2 = a^2+b^2+2ab$ \\
+$(\frac{a}{b})^2=\frac{a^2}{b^2}$
+
+
+\section{Images Representation}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale= 0.5]{k.jpeg}
+    \caption{This is my first image}
+
+\end{figure}
+
+\begin{equation}
+    (a+b)^2 = a^2+b^2+2ab
+\end{equation}
+
+\begin{itemize}
+    \item Roll Number 1
+    \item Roll Number 2
+\end{itemize}
+
+\begin{enumerate}
+    \item Roll Number 3
+    \item Roll Number 4
+\end{enumerate}
+
+\end{document}
